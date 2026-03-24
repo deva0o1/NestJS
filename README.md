@@ -35,6 +35,10 @@ git clone https://github.com/deva0o1/NestJS
 Entrar na pasta:
 
 ```
+cd NestJS
+```
+
+```
 cd projeto-nest
 ```
 
