@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Desenvolver uma API simples utilizando NestJS para fazer operações de CRUD (Create, Read, Update e Delete) de usuários.
+Desenvolver uma API simples utilizando NestJS para realizar operações de CRUD (Create, Read, Update e Delete) de usuários.
 
 ---
 
@@ -21,6 +21,17 @@ Desenvolver uma API simples utilizando NestJS para fazer operações de CRUD (Cr
 * Node.js
 * NestJS
 * TypeScript
+* SQLite
+* TypeORM
+* Thunder Client
+
+---
+
+## Banco de dados
+
+O projeto utiliza SQLite como banco de dados, armazenando os dados em um arquivo local.
+
+Inicialmente, os dados eram armazenados em memória. Depois, foi implementado o uso de banco de dados para persistência das informações.
 
 ---
 
@@ -28,7 +39,7 @@ Desenvolver uma API simples utilizando NestJS para fazer operações de CRUD (Cr
 
 Clonar o repositório:
 
-```
+```bash
 git clone https://github.com/deva0o1/NestJS
 ```
 
@@ -44,13 +55,19 @@ cd projeto-nest
 
 Instalar dependências:
 
-```
+```bash
 npm install
 ```
 
+Dependências utilizadas para banco de dados:
+
+* @nestjs/typeorm
+* typeorm
+* sqlite3
+
 Rodar o projeto:
 
-```
+```bash
 npm run start:dev
 ```
 
@@ -69,7 +86,7 @@ Criar usuário
 
 Exemplo:
 
-```
+```json
 {
  "name": "pessoa1",
  "email": "teste@email.com"
@@ -87,7 +104,7 @@ Atualizar usuário
 
 Exemplo:
 
-```
+```json
 {
  "name": "pessoa2",
  "email": "teste2@email.com"
@@ -101,7 +118,7 @@ Remover usuário
 
 ## Testes
 
-Testado usando Thunder Client.
+A API foi testada utilizando Thunder Client.
 
 ---
 
